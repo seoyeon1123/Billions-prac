@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import Link from 'next/link';
 
 interface IProps {
@@ -19,7 +18,7 @@ export default function Billionary({
   return (
     <div className="flex flex-col justify-between items-center p-2 bg-slate-800 rounded-lg shadow-md">
       <Link href={`/home/person/${id}`}>
-        <Image
+        <img
           src={squareImage}
           alt={name}
           className="w-60 h-52 mb-2 rounded-xl object-cover cursor-pointer"
