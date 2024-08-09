@@ -1,5 +1,6 @@
 import { API_URL } from '@/app/api-config';
 import FinancialAssets from '@/components/person-financialAssets';
+import Image from 'next/image';
 
 export interface IParams {
   params: { id: string };
@@ -19,7 +20,7 @@ export default async function DetailPerson({ params: { id } }: IParams) {
   const person = await getDetail(id);
   return (
     <div className="flex flex-col gap-10 my-16">
-      <img
+      <Image
         src={person.squareImage}
         alt={person.name}
         className="w-72 rounded-full"
