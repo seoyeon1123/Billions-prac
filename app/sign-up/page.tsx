@@ -2,10 +2,10 @@
 
 import Input from '@/components/input';
 import { useFormState } from 'react-dom';
-import SignUp from './action';
+import SignupAction from './action';
 
-export default function signUp() {
-  const [state, action] = useFormState(SignUp, null);
+export default function SignUp() {
+  const [state, action] = useFormState(SignupAction, null);
   return (
     <>
       <div className="flex items-center justify-center min-h-screen bg-slate-900">
